@@ -101,7 +101,7 @@ static NSString *autoSizedYArchiveKey = @"autoSizedY";
          forNonexistentKey:editorFrameKey];
     NSData *d =
         [_textStorage RTFFromRange:NSMakeRange(0, [_textStorage length])
-                documentAttributes:nil];
+                documentAttributes:@{}];
     NSString *rtfstr =
         [[NSString alloc] initWithData:d encoding:NSUTF8StringEncoding];
 
